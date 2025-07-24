@@ -6,4 +6,4 @@ matplotlib
 scikit-learn==1.6.1
 Pillow
 xgboost
-cv2
+opencv-python-headless
