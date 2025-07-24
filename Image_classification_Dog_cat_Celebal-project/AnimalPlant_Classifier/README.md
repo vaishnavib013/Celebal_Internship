@@ -1,8 +1,9 @@
 ## 🌟 Streamlit App Preview
 
-![Streamlit Preview](Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview1.png)
+![Streamlit Preview](https://raw.githubusercontent.com/vaishnavib013/Celebal_Internship/main/Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview1.png)
 
-![Streamlit Preview 2](Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview2.png)
+
+![Streamlit Preview 2](https://raw.githubusercontent.com/vaishnavib013/Celebal_Internship/main/Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview2.png)
 
 
 # 🐶🐱 Animal Image Classifier – Cat vs Dog
