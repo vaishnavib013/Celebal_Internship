@@ -1,3 +1,10 @@
+## 🌟 Streamlit App Preview
+
+![Streamlit Preview](Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview1.png)
+
+![Streamlit Preview 2](Image_classification_Dog_cat_Celebal-project/AnimalPlant_Classifier/streamlit_preview2.png)
+
+
 # 🐶🐱 Animal Image Classifier – Cat vs Dog
 ## Business Understanding
 Image classification plays a crucial role in several real-world applications, especially in automating identification processes that would otherwise require human effort. In this project, we focus on distinguishing between cats and dogs using traditional machine learning techniques, making it a foundational case study in image-based animal classification.
