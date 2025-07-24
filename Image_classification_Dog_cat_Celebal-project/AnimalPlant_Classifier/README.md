@@ -35,26 +35,28 @@ Serve as a baseline system for further extending into multi-class animal classif
 
 
 ## 🗂 Project Structure
-
-```bash
+Project Structure:
 AnimalPlant_Classifier/
 │
-├── data/                         # Raw image folders
-│   ├── Animal/
-│       ├── cat/
-│       └── dog/
-├── models/                      # Saved .pkl model files
-├── test_images/                 # Images used for testing/prediction
+├── data/ # Raw image folders
+│ ├── Animal/
+│ ├── cat/
+│ └── dog/
+├── models/ # Saved .pkl model files
+├── test_images/ # Images used for testing/prediction
 │
-├── main_classifier.py           # Contains DT, RF, KNN, GNB
-├── advanced_models.py           # Contains SVM, Logistic Regression
-├── predict.py                   # Predicts class of new image
-├── streamlit_app.py             # Streamlit Web App
+├── main_classifier.py # Contains DT, RF, KNN, GNB
+├── advanced_models.py # Contains SVM, Logistic Regression
+├── predict.py # Predicts class of new image
+├── streamlit_app.py # Streamlit Web App
 ├── README.md
-└── requirements.txt             # All dependencies
+└── requirements.txt # All dependencies
 
 
-Models and Accuracies
+---
+
+### 📊 Models and Accuracies
+
 | Model                    | Accuracy                    |
 | ------------------------ | --------------------------- |
 | Logistic Regression      | 51.50%                      |
@@ -64,6 +66,35 @@ Models and Accuracies
 | Gaussian Naive Bayes     | 56.00%                      |
 | Random Forest Classifier | **62.00%** ✅                |
 | CNN using TensorFlow     | 90.00% (for reference only) |
+
+📌 We selected **Random Forest Classifier** for our deployed model as it had the best performance among traditional ML models.
+
+---
+
+### 🔍 Feature Extraction
+
+- HOG (Histogram of Oriented Gradients) was used for extracting features from grayscale images.
+- All images were resized to 255×255×3 and flattened into vectors after HOG feature extraction.
+
+---
+
+### 📦 Prediction Script
+
+**`predict.py`** loads each trained model (from `.pkl` files) and runs prediction on images from the `test_images/` folder. Outputs are printed on the console.
+
+---
+
+### 🧪 Model Training
+
+- **`main_classifier.py`**: Trained KNN, DecisionTree, RandomForest, GaussianNB  
+- **`advanced_models.py`**: Trained SVM, Logistic Regression
+
+Each model was saved using:
+
+```python
+with open('models/model_name.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
 
 
 📌 We selected Random Forest Classifier for our deployed model as it had the best performance among traditional ML models.
